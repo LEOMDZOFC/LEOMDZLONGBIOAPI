@@ -30,7 +30,7 @@ app = Flask(__name__)
 
 # ---------- Constants (OB54 Updated) ----------
 FREEFIRE_UPDATE_URL = "https://clientbp.ggpolarbear.com/UpdateSocialBasicInfo"
-MAJOR_LOGIN_URL = "https://loginbp.ggpolarbear.com/MajorLogin"
+MAJOR_LOGIN_URL = "https://client.ind.freefiremobile.com/MajorLogin"
 OAUTH_URL = "https://100067.connect.garena.com/oauth/guest/token/grant"
 FREEFIRE_VERSION = "OB54"
 
@@ -299,8 +299,8 @@ def upload_bio_request(jwt_token, bio_text):
 def index():
     return jsonify({
         "api": "Long Bio API (OB54)",
-        "credit": "SHAPPNO GMR",
-        "telegram": "@SHAPPNO_CODEX",
+        "credit": "LEO MODZ",
+        "telegram": "@LEOMORZOFC",
         "version": "OB54",
         "status": "running on Vercel ✅",
         "endpoints": {
@@ -386,8 +386,8 @@ def combined_bio_upload():
     result = upload_bio_request(final_jwt, bio)
     
     response_data = {
-        "Credit": "SHAPPNO GMR",
-        "Join For More": "Telegram: @SHAPPNO_CODEX",
+        "Credit": "LEO MODZ",
+        "MADE": "BY: @LEO MODZ",
         "status": result["status"],
         "login_method": login_method,
         "code": result["code"],
